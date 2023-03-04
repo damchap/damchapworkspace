@@ -15,6 +15,7 @@ importers:
       '@types/node': 18.14.0
       '@types/react': ^18.0.27
       '@types/react-dom': ^18.0.10
+      '@vercel/analytics': ^0.1.11
       clsx: ^1.2.1
       eslint: 8.34.0
       eslint-config-next: 13.2.1
@@ -28,6 +29,7 @@ importers:
       '@types/node': 18.14.0
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
+      '@vercel/analytics': 0.1.11_react@18.2.0
       clsx: 1.2.1
       eslint: 8.34.0
       eslint-config-next: 13.2.1_7kw3g6rralp5ps6mg3uyzz6azm
@@ -3247,6 +3249,14 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.53.0
       eslint-visitor-keys: 3.3.0
+    dev: false
+
+  /@vercel/analytics/0.1.11_react@18.2.0:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@vitejs/plugin-react/3.1.0_vite@4.1.2:
