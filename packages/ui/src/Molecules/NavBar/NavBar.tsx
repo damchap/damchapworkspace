@@ -43,8 +43,8 @@ export function NavBar({className, navItems, route}: Props) {
             </a>
         </div>
         <div className={Styles.NavBar__items}>
-            {navItems.map((navItem) => {
-                return <NavItem link={navItem.link}>{navItem.name}</NavItem>
+            {navItems.map((navItem, index) => {
+                return <NavItem key={index} link={navItem.link}>{navItem.name}</NavItem>
             })}
             <Button className={clsx(Styles.NavBar__button)} color={theme === 'dark' ? "#FFF" : "#0F172A"} outline={true} icon={"mdi:github"} children={""}/>
             <Button className={clsx(Styles.NavBar__button)} color={theme === 'dark' ? "#FFF" : "#0F172A"} outline={true} icon={theme === 'dark' ? "ion:moon-sharp" : "ion:md-sunny"} children={""} onClick={HandleTheme}/>

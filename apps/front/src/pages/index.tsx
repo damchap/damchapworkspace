@@ -36,7 +36,7 @@ const navItems = [
 const onclick = () => {
     console.log("test")
 }
-export default function Home() {;
+export default function Home() {
     return (
     <>
       <Head>
