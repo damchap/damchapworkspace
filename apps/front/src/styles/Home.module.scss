@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titreH1 {
+  font-size: 6.25rem !important;
+  font-weight: 900;
+  text-align: center;
+}
+.titreH1span {
+  color: var(--secondary-color);
+}
+.HelloWorld {
+    font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.BaseLine {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 2.375rem;
+}
+.Description {
+  font-weight: 500;
+  margin-bottom: 2.375rem;
+  color: var(--tertiary-color);
+  text-align: center;
+  max-width: calc(500px + 1 * (100vw - 320px)/1080);
+}
+.HeaderButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & > Button:last-child {
+    margin-left: 1.625rem;
+  }
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  // flex-direction: row; screen > 768px
+
+  margin-top: 7.5rem;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3.75rem;
+  width: 100%;
+  .TitreContent {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: left;
+  }
+  & > div:first-child {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  & > div:last-child {
+    flex-basis: 50%;
+  }
+  .Link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    &:after {
+      content: " →";
+    }
+  }
+  .info{
+    color: var(--tertiary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 143.8%;
+  }
+  .time {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    color:var(--tertiary-color);
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    & > div:last-child {
+      flex-basis: 100%;
+    }
+  }
+}
