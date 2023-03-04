@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "turbo build --parallel"
+    "build": "turbo run build --parallel",
+    "deploy": "turbo run build --scope=app --includeDependencies --no-deps"
   },
   "keywords": [],
   "author": "",
