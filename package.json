@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build --parallel",
-    "deploy": "turbo run build --parallel"
+    "deploy": "turbo run build"
   },
   "keywords": [],
   "author": "",
