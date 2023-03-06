@@ -31,7 +31,7 @@ export function ArcticleItem({className, Image, Title, Description, Date, Views,
         </div>
         <div className={Styles.DescriptionArticle}>
             <div className={clsx(Styles.infoArticle)}>
-                <time dateTime={Date?.toTimeString()}>{Date?.toTimeString()}</time>
+                <time dateTime={Date?.toLocaleDateString("fr")}>{Date?.toLocaleDateString("fr")}</time>
                 <span>10 vues</span>
             </div>
             <h3>{Title}</h3>
@@ -42,7 +42,7 @@ export function ArcticleItem({className, Image, Title, Description, Date, Views,
                 })}
             </div>
             <p>
-                pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou
+                {Description}
             </p>
         </div>
     </article>

@@ -17,7 +17,7 @@ class img {
 }
 
 Default.args = {
-    Image: "test",
+    Image: new img("../../../public/iconArticle/Congratulations.svg", "test"),
     Title: "Allez ç’est (re)parti pour de nouvelle aventure ! 💥",
     Description: "pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou",
     Date: new Date(),

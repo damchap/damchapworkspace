@@ -12,11 +12,14 @@ import {TitreH4} from "@damchap/ui/src/Atoms/TitreH1/TitreH4/TitreH4";
 // images
 import chapart_damien from '/public/chapart_damien.png';
 import logo_clevguard from '/public/logo_clevguard.png';
-import iconArticleAnalytics from '/public/iconArticle/Analytics.svg';
 import Link from "next/link";
 import {ArcticleItem} from "@damchap/ui/src/Molecules/ArcticleItem/ArcticleItem";
 
 const inter = Inter({ subsets: ['latin'] })
+class techno {
+    constructor(public name: string, public icon: string) {
+    }
+}
 const navItems = [
     {
         link: '/',
@@ -109,13 +112,13 @@ export default function Home() {
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋️Article récents</TitreH2>
               <div className={styles.content}>
-                  <Image src={iconArticleAnalytics}
-                         alt="Picture of the author"
-                         width={414}
-                         height={230}
-                         priority={true}
-                  />
-                <ArcticleItem className={clsx(inter.className, styles.article)} Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}} />
+                <ArcticleItem className={clsx(inter.className, styles.article)}
+                              Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}}
+                              Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
+                              Date={new Date(2023, 1, 1)}
+                              Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
+                              Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "mdi:nextjs"))}
+                />
               </div>
           </section>
       </main>
