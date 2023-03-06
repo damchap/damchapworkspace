@@ -111,7 +111,7 @@ export default function Home() {
           </section>
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋️Article récents</TitreH2>
-              <div className={styles.content}>
+              <div className={styles.contentArticle}>
                 <ArcticleItem className={clsx(inter.className, styles.article)}
                               Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}}
                               Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}

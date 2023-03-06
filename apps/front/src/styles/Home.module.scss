@@ -48,6 +48,14 @@
   margin-top: 7.5rem;
   width: 100%;
 }
+.contentArticle {
+  margin-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  & > *:not(:first-child) {
+    margin-top: 3.75rem;
+  }
+}
 .content {
   display: flex;
   flex-direction: row;
