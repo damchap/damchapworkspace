@@ -117,8 +117,19 @@ export default function Home() {
                               Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
                               Date={new Date(2023, 1, 1)}
                               Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
-                              Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "mdi:nextjs"))}
-                />
+                              Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "mdi:nextjs"))}/>
+                  <ArcticleItem className={clsx(inter.className, styles.article)}
+                                Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}}
+                                Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
+                                Date={new Date(2023, 1, 1)}
+                                Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
+                                Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "mdi:nextjs"))}/>
+                  <ArcticleItem className={clsx(inter.className, styles.article)}
+                                Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}}
+                                Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
+                                Date={new Date(2023, 1, 1)}
+                                Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
+                                Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "mdi:nextjs"))}/>
               </div>
           </section>
       </main>
