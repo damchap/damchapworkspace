@@ -12,6 +12,7 @@ import {TitreH4} from "@damchap/ui/src/Atoms/TitreH1/TitreH4/TitreH4";
 // images
 import chapart_damien from '/public/chapart_damien.png';
 import logo_clevguard from '/public/logo_clevguard.png';
+import iconArticleAnalytics from '/public/iconArticle/Analytics.svg';
 import Link from "next/link";
 import {ArcticleItem} from "@damchap/ui/src/Molecules/ArcticleItem/ArcticleItem";
 
@@ -108,6 +109,12 @@ export default function Home() {
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋️Article récents</TitreH2>
               <div className={styles.content}>
+                  <Image src={iconArticleAnalytics}
+                         alt="Picture of the author"
+                         width={414}
+                         height={230}
+                         priority={true}
+                  />
                 <ArcticleItem className={clsx(inter.className, styles.article)} Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}} />
               </div>
           </section>
