@@ -7,7 +7,7 @@ type Props = {
     children?: React.ReactNode
     link?: string
     style?: React.CSSProperties
-    key?: number
+    key?: React.Key
 
 }
 

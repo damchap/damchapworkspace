@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import {Button, TitreH1} from "@damchap/ui";
-import {NavItem} from "@damchap/ui/src/Atoms/NavItem/NavItem";
 import {NavBar} from "@damchap/ui/src/Molecules/NavBar/NavBar";
 import clsx from "clsx";
 import {TitreH2} from "@damchap/ui/src/Atoms/TitreH2/TitreH2";
@@ -14,6 +13,7 @@ import {TitreH4} from "@damchap/ui/src/Atoms/TitreH1/TitreH4/TitreH4";
 import chapart_damien from '/public/chapart_damien.png';
 import logo_clevguard from '/public/logo_clevguard.png';
 import Link from "next/link";
+import {ArcticleItem} from "@damchap/ui/src/Molecules/ArcticleItem/ArcticleItem";
 
 const inter = Inter({ subsets: ['latin'] })
 const navItems = [
@@ -107,7 +107,9 @@ export default function Home() {
           </section>
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋️Article récents</TitreH2>
-
+              <div className={styles.content}>
+                <ArcticleItem className={clsx(inter.className, styles.article)} Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}} />
+              </div>
           </section>
       </main>
     </>
