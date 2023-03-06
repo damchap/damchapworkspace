@@ -24,11 +24,19 @@ export function NavBar({className, navItems, route}: Props) {
 
     const [theme, setTheme] = React.useState("light")
     const HandleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light')
+
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', theme)
         console.log(document.documentElement.getAttribute('data-theme'))
     }, [theme])
-
+// auto dark mode
+    useEffect(() => {
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+        darkModeMediaQuery.addListener((e) => {
+            const newTheme = e.matches ? 'dark' : 'light'
+            setTheme(newTheme)
+        })
+    }, [theme])
 
     const [menuDropDown, setMenuDropDown] = React.useState(false)
     const menuDropDownFunc = () => {
