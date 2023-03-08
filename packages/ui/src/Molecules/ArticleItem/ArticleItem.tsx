@@ -1,4 +1,4 @@
-import Styles from './ArcticleItem.module.scss'
+import Styles from './ArticleItem.module.scss'
 import clsx from 'clsx'
 import {Button} from "../../Atoms/Button/Button";
 
@@ -21,7 +21,7 @@ type Props = {
     Technologies?: Array<techno>
 }
 
-export function ArcticleItem({className, Image, Title, Description, Date, Views, Technologies}: Props) {
+export function ArticleItem({className, Image, Title, Description, Date, Views, Technologies}: Props) {
     return <article className={clsx(className, Styles.ArcticleItem)} >
         <div className={clsx(Styles.ContentImage)}>
             <img src={Image?.src}

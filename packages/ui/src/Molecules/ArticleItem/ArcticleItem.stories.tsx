@@ -1,13 +1,13 @@
-import {ArcticleItem} from './ArcticleItem'
+import {ArticleItem} from './ArticleItem'
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 
 export default {
-    title: 'Molecules/ArcticleItem',
-    component: ArcticleItem,
+    title: 'Molecules/ArticleItem',
+    component: ArticleItem,
     argTypes: {}
-} as ComponentMeta<typeof ArcticleItem>;
+} as ComponentMeta<typeof ArticleItem>;
 
-const Template: ComponentStory<typeof ArcticleItem> = (args) => <ArcticleItem {...args} />;
+const Template: ComponentStory<typeof ArticleItem> = (args) => <ArticleItem {...args} />;
 
 export const Default = Template.bind({});
 
