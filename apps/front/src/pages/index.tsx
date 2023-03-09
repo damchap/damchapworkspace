@@ -7,8 +7,6 @@ import clsx from "clsx";
 
 // images
 import chapart_damien from '/public/chapart_damien.png';
-import logo_clevguard from '/public/logo_clevguard.png';
-import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
 class techno {
