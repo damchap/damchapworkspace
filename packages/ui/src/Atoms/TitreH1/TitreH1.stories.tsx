@@ -2,7 +2,7 @@ import {TitreH1} from './TitreH1'
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 
 export default {
-    title: 'Atoms/TitreH1',
+    title: 'Atoms/Titre/TitreH1',
     component: TitreH1,
     argTypes: {}
 } as ComponentMeta<typeof TitreH1>;

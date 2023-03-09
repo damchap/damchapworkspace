@@ -7,9 +7,11 @@ export {Button} from './Atoms/Button/Button';
 export {TitreH1} from './Atoms/TitreH1/TitreH1';
 export {TitreH2} from './Atoms/TitreH2/TitreH2';
 export {TitreH3} from './Atoms/TitreH3/TitreH3';
+export {TitreH4} from './Atoms/TitreH4/TitreH4';
 
 
 // Molecules
 export {ArticleItem} from './Molecules/ArticleItem/ArticleItem';
 export {NavBar} from './Molecules/NavBar/NavBar';
-export {ProjectPromote} from './Molecules/ProjectPromote/ProjectPromote';
+export {ProjectPromote} from './Organisms/ProjectPromote/ProjectPromote';
+export {GroupLogoTech} from './Molecules/GroupLogoTech/GroupLogoTech';

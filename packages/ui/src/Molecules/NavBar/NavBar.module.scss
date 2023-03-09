@@ -43,6 +43,10 @@
         margin: 0;
     }
 }
+.NavBar__button:hover {
+    transform: scale(1.05) ;
+    transition-duration: 100ms;
+}
 
 
 .Navbar__burger__menu__drop__down {

@@ -1,6 +1,8 @@
 .ArcticleItem {
   display: flex;
     flex-direction: row;
+  padding:32px 8px;
+  border-radius: 8px;
   & .infoArticle{
     display: flex;
     flex-direction: row;
@@ -16,10 +18,17 @@
     }
   }
 }
+.ArcticleItem:hover {
+  cursor: pointer;
+  background-color: rgb(var(--backgroundArticle));
+  transform: scale(1.01) ;
+  transition-duration: 100ms;
+}
 .ContentImage {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 .DescriptionArticle {
   & > h3 {
@@ -49,6 +58,19 @@
   font-size: 14px !important;
   font-weight: bold !important;
   & > svg {
-    margin-right: 8px
+    margin-right: 8px;
+    color: var(--color-primary);
+    &[data-theme="dark"] {
+      color: #fff;
+    }
+  }
+}
+.TitreArticle {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-primary);
+  &[data-theme="dark"] {
+    color: #fff;
   }
 }

@@ -23,7 +23,9 @@
 }
 .Button:hover {
     color: #fff;
-}
+     transform: scale(1.05) ;
+     transition-duration: 100ms;
+ }
 .Icon {
     margin-right: 0.25rem;
     width: 1.25rem;

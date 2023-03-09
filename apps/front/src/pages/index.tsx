@@ -2,9 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
-import {Button, TitreH1, TitreH3, TitreH2, ArticleItem, NavBar} from "@damchap/ui";
+import {Button, TitreH1, TitreH3, TitreH2, TitreH4, ArticleItem, NavBar, ProjectPromote} from "@damchap/ui";
 import clsx from "clsx";
-import {TitreH4} from "@damchap/ui/src/Atoms/TitreH1/TitreH4/TitreH4";
 
 // images
 import chapart_damien from '/public/chapart_damien.png';
@@ -85,25 +84,13 @@ export default function Home() {
           </section>
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>📘 Projet en avant</TitreH2>
-              <div className={styles.content}>
-                  <div>
-                      <Image src={logo_clevguard}
-                             alt="Picture of the author"
-                             width={414}
-                             height={230}
-                             priority={true}
-                      />
-                  </div>
-                  <div>
-                      <TitreH3 className={clsx(inter.className, styles.TitreContent)}>Assistant Clevguard</TitreH3>
-                      <time className={clsx(inter.className, styles.time)}>2019 - 2020</time>
-                      <p className={clsx(inter.className, styles.info)}>
-                          Clevguard est un projet de fin d’année de terminale STI2D (Sciences et Technologies de l’Industrie et du Développement Durable) option SIN (Système d’information et numérique).
-                          Le projet Clevguard est divisé en plusieurs composantes, des boîtiers de capteurs divers ainsi qu’une progressive Web App permettant une visualisation des données des capteurs.
-                      </p>
-                      <Link href="/" className={clsx(inter.className, styles.Link)}>En savoir plus</Link>
-                  </div>
-              </div>
+              <ProjectPromote className={clsx(inter.className, styles.project)}
+                              UrlImage="/logo_clevguard.png"
+                              Title="Assistant Clevguard"
+                              Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]}
+                              Date={{dateStart:"2019",dateEnd: "2020"}}
+                              Description="Clevguard est un projet de fin d’année de terminale STI2D (Sciences et Technologies de l’Industrie et du Développement Durable) option SIN (Système d’information et numérique). Le projet Clevguard est divisé en plusieurs composantes, des boîtiers de capteurs divers ainsi qu’une progressive Web App permettant une visualisation des données des capteurs."
+              />
           </section>
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋️Article récents</TitreH2>

@@ -5,13 +5,17 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --foreground-rgb: 15, 23, 42;
+  --backgroundArticle:243, 244, 246;
   --primary-color: #0F172A;
   --secondary-color: #2181FA;
   --tertiary-color: #64748B;
+  --color-icon-article: #000;
 }
 
 :root[data-theme="dark"] {
   --foreground-rgb: 255, 255, 255;
+  --backgroundArticle: 31, 41, 55;
+  --color-icon-article: #FFF;
 }
 
 * {
