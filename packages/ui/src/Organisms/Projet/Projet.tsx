@@ -19,5 +19,6 @@ export function Projet({className, UrlImage}: Props) {
             <h3 >Projet 1</h3>
             <span>2019 - 2020</span>
         </div>
+        <p className={Styles.ProjetDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet ultricies ultricies, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc sit amet ultricies ultricies, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl.</p>
     </div>
 }
