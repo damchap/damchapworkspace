@@ -1,0 +1,58 @@
+.Project {
+  width: 45%;
+  display: flex;
+    flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+
+}
+.ProjectTitreContent {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  span {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: var(--tertiary-color);
+  }
+
+}
+.TitleBlock {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.GroupLogoTech {
+  // flex basis
+  flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+  justify-items: left;
+  &> * {
+    justify-items: left;
+    justify-content: left;
+  }
+}
+.ProjectButtons {
+  display: flex;
+  flex-direction: row;
+  & > *:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .Project {
+    width: 80%;
+  }
+
+
+}

@@ -8,19 +8,27 @@ type Props = {
     className?: string,
     outline?: boolean,
     color?: string,
+    borderColor?: string,
     onClick?: () => void,
     icon?: string,
-    children: React.ReactNode
+    children?: React.ReactNode
+    lien?: string
 }
 
-export const Button = ({className, outline, color, onClick, icon, children}: Props) => {
+export const Button = ({className, outline, color, onClick, icon, children, lien, borderColor}: Props) => {
 
-    return (
-        <button
-            onClick={onClick}
-            className={clsx(className, Styles.Button)} style={outline ? {color: color, backgroundColor: "transparent"} : {backgroundColor: color, borderColor: color}}>
+    return <a href={lien}
+            className={clsx(className, Styles.Button)} style={outline ? {
+                color: color,
+                backgroundColor: "transparent",
+                borderColor: borderColor
+            } : {
+                backgroundColor: color,
+                borderColor: color
+            }}>
             {icon && <Icon icon={icon} className={Styles.Icon} style={{color: color}}/>}
             {children}
-        </button>
-    )
+        </a>
+    {}
+
 }

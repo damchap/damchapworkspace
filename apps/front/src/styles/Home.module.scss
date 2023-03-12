@@ -7,6 +7,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+}
 .titreH1 {
   font-size: 6.25rem !important;
   font-weight: 900;
@@ -36,7 +46,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  & > Button:last-child {
+  & > a:last-child {
     margin-left: 1.625rem;
   }
 }
@@ -101,6 +111,15 @@
   }
 
 }
+.row {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.75rem;
+    width: 100%;
+
+}
 
 @media screen and (max-width: 768px) {
   .content {
@@ -109,4 +128,24 @@
       flex-basis: 100%;
     }
   }
+  .row {
+    flex-direction: column;
+    & > div:last-child {
+      margin-top: 1.75rem;
+    }
+  }
+}
+@media screen and (max-width: 970px) {
+  .row {
+    flex-direction: column;
+    & > div:last-child {
+      margin-top: 1.75rem;
+    }
+  }
+}
+.ProjectFin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.5rem;
 }

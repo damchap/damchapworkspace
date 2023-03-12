@@ -1,0 +1,50 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.Social{
+  display: flex;
+  flex-direction: row;
+  & > *:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+  margin: 0;
+}
+.ButtonFooter {
+    border-color: rgba(var(--hue), var(--hue), var(--hue), 0.18);
+    padding: 8px;
+  & > * {
+    margin: 0;
+  }
+
+}
+.TitreFooter {
+    font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+}
+.DescribeFooter {
+    font-size: 1rem;
+  font-weight: 700;
+  // capatilize
+    text-transform: uppercase;
+}
+.FooterContent {
+  display: flex;
+  flex-direction: column;
+  &> *:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+  & > hr {
+    margin-top: 0.625rem;
+    border: 0;
+    border-top: 1px solid #EBEBEB;
+  }
+}

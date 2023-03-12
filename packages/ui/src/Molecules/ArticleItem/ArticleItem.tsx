@@ -40,7 +40,7 @@ export function ArticleItem({className, Image, Title, Description, Date, Views, 
             <div className={clsx(Styles.ContentButton)}>
 
                 {Technologies && Technologies.map((techno, index) => {
-                    return <Button className={clsx(Styles.ButtonArticle)} color={"#64748B"} outline={true} icon={techno.icon} children={techno.name}/>
+                    return <Button className={clsx(Styles.ButtonArticle)} color={"var(--tertiary-color);"} outline={true} icon={techno.icon} children={techno.name}/>
                 })}
             </div>
             <p>

@@ -7,6 +7,8 @@ import clsx from "clsx";
 
 // images
 import chapart_damien from '/public/chapart_damien.png';
+import {Project} from "@damchap/ui/src/Organisms/Projet/Project";
+import {Footer} from "@damchap/ui/src/Molecules/Footer/Footer";
 
 const inter = Inter({ subsets: ['latin'] })
 class techno {
@@ -115,8 +117,22 @@ export default function Home() {
           </section>
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋 Les autres project</TitreH2>
+              <div className={clsx(styles.row)}>
+                  <Project className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                  <Project  className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+              </div>
+              <div className={clsx(styles.row)}>
+                  <Project className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                  <Project  className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+
+              </div>
+              <div className={clsx(styles.row, styles.ProjectFin)}>
+                  <Button onClick={onclick} className={clsx(inter.className)} color={"#2181FA"} outline={true} > Voir plus</Button>
+
+              </div>
           </section>
       </main>
+        <Footer className={clsx(inter.className)}/>
     </>
   )
 }
