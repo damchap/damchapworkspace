@@ -130,7 +130,6 @@ export default function Home() {
               </div>
           </section>
       </main>
-        <Footer className={clsx(inter.className)}/>
     </>
   )
 }
