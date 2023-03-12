@@ -17,7 +17,7 @@ type Props = {
 
 export const Button = ({className, outline, color, onClick, icon, children, lien, borderColor}: Props) => {
 
-    return <a href={lien}
+    return <a href={lien} onClick={onClick}
             className={clsx(className, Styles.Button)} style={outline ? {
                 color: color,
                 backgroundColor: "transparent",
