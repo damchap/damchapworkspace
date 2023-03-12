@@ -30,7 +30,7 @@ export function Footer({className}: Props) {
                 Stack utilisé : React, next, typescript
             </p>
         </div>
-
+test
         <div className={clsx(Styles.footerNav)}>
             <div className={clsx(Styles.FooterContent, Styles.FooterCenter)}>
             <h3>Navigation</h3>
