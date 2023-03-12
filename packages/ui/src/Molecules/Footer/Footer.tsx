@@ -7,7 +7,7 @@ type Props = {
 }
 
 export function Footer({className}: Props) {
-    return <footer className={clsx(className, Styles.Footer)}>
+    return <> <footer className={clsx(className, Styles.Footer)}>
         <div className={clsx(Styles.FooterContent)}>
 
                 <svg width="45" height="26" viewBox="0 0 45 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,13 +24,12 @@ export function Footer({className}: Props) {
                 </div>
             <hr/>
             <p>
-                © 2023 developed whith ❤️ by Damien Chapart
+                © 2023 developed whith ❤ by Damien Chapart
             </p>
             <p>
                 Stack utilisé : React, next, typescript
             </p>
         </div>
-test
         <div className={clsx(Styles.footerNav)}>
             <div className={clsx(Styles.FooterContent, Styles.FooterCenter)}>
             <h3>Navigation</h3>
@@ -50,9 +49,6 @@ test
                     <li><a href="#">Plan du site</a></li>
                 </ul>
             </div>
-
         </div>
-
-
-    </footer>
+    </footer></>
 }
