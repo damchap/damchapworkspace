@@ -13,5 +13,10 @@ export {TitreH4} from './Atoms/TitreH4/TitreH4';
 // Molecules
 export {ArticleItem} from './Molecules/ArticleItem/ArticleItem';
 export {NavBar} from './Molecules/NavBar/NavBar';
-export {ProjectPromote} from './Organisms/ProjectPromote/ProjectPromote';
 export {GroupLogoTech} from './Molecules/GroupLogoTech/GroupLogoTech';
+export {Footer} from './Molecules/Footer/Footer';
+
+// Organisms
+
+export {Project} from './Organisms/Project/Project';
+export {ProjectPromote} from './Organisms/ProjectPromote/ProjectPromote';

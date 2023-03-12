@@ -2,13 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
-import {Button, TitreH1, TitreH3, TitreH2, TitreH4, ArticleItem, NavBar, ProjectPromote} from "@damchap/ui";
+import {Button, TitreH1, TitreH3, TitreH2, TitreH4, ArticleItem, NavBar, ProjectPromote, Footer, Project} from "@damchap/ui";
 import clsx from "clsx";
 
 // images
 import chapart_damien from '/public/chapart_damien.png';
-import {Project} from "@damchap/ui/src/Organisms/Projet/Project";
-import {Footer} from "@damchap/ui/src/Molecules/Footer/Footer";
 
 const inter = Inter({ subsets: ['latin'] })
 class techno {
