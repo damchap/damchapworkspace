@@ -50,8 +50,17 @@
   }
 }
 @media screen and (max-width: 970px) {
+  .ProjectButtons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .Project {
     width: 80%;
+
+  }
+  .ProjectButtons a {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
   }
 
 

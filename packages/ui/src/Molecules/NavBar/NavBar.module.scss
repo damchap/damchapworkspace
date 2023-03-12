@@ -31,6 +31,11 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 768px) {
+    .NavBar__items > .NavItem {
+        display: none;
+    }
+}
 .NavBar__button {
     border-color: rgba(var(--hue), var(--hue), var(--hue), 0.18);
     padding: 8px;
