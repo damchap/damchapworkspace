@@ -17,7 +17,8 @@ export function Project({className, UrlImage, Technologies}: Props) {
             <img
                 src={UrlImage}
                 alt="Picture of the author"
-
+                width={"100%"}
+                height={"100%"}
                 style={{objectFit: 'cover'}}
             />
         <div className={clsx(Styles.TitleBlock)}>
