@@ -71,12 +71,12 @@ export default function Home() {
                       <TitreH3 className={clsx(inter.className, styles.TitreContent)}>Damien Chapart</TitreH3>
                       <TitreH4 className={clsx(inter.className)}>Etudiant en licence pro et développeur full stack</TitreH4>
                       <p className={clsx(inter.className, styles.info)}>
-                          Bonjour et bienvenue, je un développeur junior, passionné par les nouvelles technologies et leurs facultés à améliorer la productivité des entreprises.
+                          Bonjour et bienvenue, je suis un développeur junior, passionné par les nouvelles technologies et leurs facultés à améliorer la productivité des entreprises.
                           <br/>
                           <br/>
                           Je réalise depuis plusieurs années, différents projets personnels ou professionnels dans le domaine de l’informatique, plus particulièrement dans le développement web ainsi que l’hébergement.
                       </p>
-                      <Button onClick={onclick} className={clsx(inter.className)} color={"#2181FA"} outline={true} > En savoir Plus</Button>
+                      <Button lien={"/about"} className={clsx(inter.className)} color={"#2181FA"} outline={true} > En savoir Plus</Button>
                   </div>
               </div>
           </section>
