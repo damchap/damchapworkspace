@@ -23,7 +23,7 @@ export function Footer({className}: Props) {
             </div>
             <hr/>
             <p>
-                © 2023 developed whith ❤ by Damien Chapart
+                © 2023 developed whith <span style={{color: "red"}}>❤</span> by Damien Chapart
             </p>
             <p>
                 Stack utilisé : React, next, typescript
