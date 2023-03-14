@@ -1,0 +1,23 @@
+.BlockDescription {
+
+}
+.BlockDescription__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 0.625rem;
+  & > a {
+    color: var(--secondary-color);
+  }
+}
+.BlockDescription__date {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  color: var(--tertiary-color);
+  font-size: 1rem;
+
+}
+.BlockDescription__Ul {
+  margin-top: 0.625rem;
+  margin-left: 1.438rem;
+  color: var(--tertiary-color);
+}

@@ -15,6 +15,7 @@ export {ArticleItem} from './Molecules/ArticleItem/ArticleItem';
 export {NavBar} from './Molecules/NavBar/NavBar';
 export {GroupLogoTech} from './Molecules/GroupLogoTech/GroupLogoTech';
 export {Footer} from './Molecules/Footer/Footer';
+export {BlockDescription} from './Molecules/BlockDescription/BlockDescription';
 
 // Organisms
 
