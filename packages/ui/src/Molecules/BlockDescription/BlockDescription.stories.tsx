@@ -11,7 +11,9 @@ const Template: ComponentStory<typeof BlockDescription> = (args) => <BlockDescri
 
 export const Default = Template.bind({});
 Default.args = {
-    Titre: "Développeur / intégrateur @performance-webmarketing",
+    Title: "Développeur / intégrateur ",
+    Link: "https://performance-webmarketing.fr",
+    TitleLink: "performance-webmarketing",
     Date: "septembre 2022 - Aujourd’hui",
     Description: [
         "Conception de site web avec des framework javascript / typescript",
