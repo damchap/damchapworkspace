@@ -282,7 +282,125 @@ export default function About() {
                 <section className={styles.section}>
                     <TitreH2 className={clsx(inter.className)}>🧪 Expérience</TitreH2>
                     <div className={styles.experience}>
-                        <BlockDescription className={clsx(inter.className)} />
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Développeur / intégrateur "}
+                                          Link={"https://performance-webmarketing.fr"}
+                                          TitleLink={"performance-webmarketing"}
+                                          Date={"septembre 2022 - Aujourd’hui"}
+                                          Description={[
+                                              "Conception de site web avec des framework javascript / typescript",
+                                              "Conception de maquette / UI kits",
+                                              "Intégration sur different CMS (Worpress, prestashop)",
+                                              "Optimisation de site pour le SEO (référencement naturel) et pour l’impact carbone"
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Chef de projet / Product Owner"}
+                                          Link={"https://performance-webmarketing.fr"}
+                                          TitleLink={"perf’n-zen"}
+                                          Date={"décembre 2022 - Aujourd’hui"}
+                                          Description={[
+                                              "Conception d’une infrastructure réseaux",
+                                              "Mise en place de gestion de project",
+                                              "Conception d’une app multi plate-forme (React-native)",
+                                              "Relation client",
+                                              "Création et gestion de basse de donnée"
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Développeur"}
+                                          Link={"https://performance-webmarketing.fr"}
+                                          TitleLink={"365-1/4-conciergerie"}
+                                          Date={"novembre 2022 - Aujourd’hui"}
+                                          Description={[
+                                              "project fin de parcourt projet CMS"
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Administrateur"}
+                                          Link={"https://mjc-dz.org"}
+                                          TitleLink={"mjc-dz.org"}
+                                          Date={"septembre 2020 - Aujourd’hui"}
+                                          Description={[
+                                              "Administrateur au Conseil d’administration de la maison des jeunes et de la culture a douarnenez",
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Stagiaire developeur "}
+                                          Link={"https://performance-webmarketing.fr"}
+                                          TitleLink={"performance-webmarketing"}
+                                          Date={"décembre 2022 - janvier 2022"}
+                                          Description={[
+                                              "Conception de maquette / UI kits",
+                                              "Intégration sur different CMS (Worpress, prestashop)"
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Stagiaire développer"}
+                                          Link={"https://www.novatech-groupe.com/"}
+                                          TitleLink={"novatech"}
+                                          Date={"mais 2021 - juin 2021"}
+                                          Description={[
+                                              "Conception d'une app de gestion de ligne de production",
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Responsable technique"}
+                                          Link={"https://ecowan.fr"}
+                                          TitleLink={"ecowan-asso"}
+                                          Date={"novembre 2020 - février 2021"}
+                                          Description={[
+                                              "gestion d’équipe dans une association d’hébergement ( WEB, VPS, Serveur dédié)",
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Technique de niveau 3"}
+                                          Link={"https://ecowan.fr"}
+                                          TitleLink={"cosmhost-asso"}
+                                          Date={"juin 2020 - novembre 2020"}
+                                          Description={[
+                                              "gestion et résolution des problème client et gestion de l’infrastructure réseaux ",
+                                          ]}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Développeur / intégrateur "}
+                                          Link={"https://performance-webmarketing.fr"}
+                                          TitleLink={"performance-webmarketing"}
+                                          Date={"septembre 2022 - Aujourd’hui"}
+                                          Description={[
+                                              "Conception de site web avec des framework javascript / typescript",
+                                              "Conception de maquette / UI kits",
+                                              "Intégration sur different CMS (Worpress, prestashop)",
+                                              "Optimisation de site pour le SEO (référencement naturel) et pour l’impact carbone"
+                                          ]}/>
+                    </div>
+                </section>
+                <section className={styles.section}>
+                    <TitreH2 className={clsx(inter.className)}>🎓 Formation</TitreH2>
+                    <div className={styles.experience}>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Licence CDA (Concepteur d’application) "}
+                                          Link={"https://ladigitalschool.com/fr/"}
+                                          TitleLink={"la-digital-school"}
+                                          Date={"septembre 2022 - septembre 2023"}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"BTS SIO option SLAM (Brevet de technicien Supérieur Service Informatique au Organisation) "}
+                                          Link={"https://www.saint-louis29.net/"}
+                                          TitleLink={"saint-louis"}
+                                          Date={"septembre 2020 - juin 2022"}/>
+                        <BlockDescription className={clsx(inter.className)}
+                                          Title={"Bac STI2D (Science et Technique de l'Ingénierie et du Développement Durable) "}
+                                          Link={"https://likes.org/"}
+                                          TitleLink={"la-digital-school"}
+                                          Date={"septembre 2017 - juin 2020"}/>
+                    </div>
+                </section>
+                <section className={styles.section}>
+                    <TitreH2 className={clsx(inter.className)}>📌 Quelque project</TitreH2>
+                    <div className={clsx(styles.row)}>
+                        <Project className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                        <Project  className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                    </div>
+                    <div className={clsx(styles.row)}>
+                        <Project className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                        <Project  className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+
+                    </div>
+                    <div className={clsx(styles.row, styles.ProjectFin)}>
+                        <Button onClick={onclick} className={clsx(inter.className)} color={"#2181FA"} outline={true} > Voir plus</Button>
+
                     </div>
                 </section>
             </main>
