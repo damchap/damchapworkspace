@@ -43,6 +43,7 @@ export default function About() {
                 <NavBar className={inter.className} navItems={navItems} />
             </header>
             <main className={styles.main}>
+                <TitreH2 className={clsx(inter.className)}>A propos</TitreH2>
                 <section className={styles.section}>
                     <TitreH2 className={clsx(inter.className)}>🤔 Qui suis-je</TitreH2>
                     <div className={styles.content}>
