@@ -6,13 +6,15 @@ import {Button} from "../../Atoms/Button/Button";
 type Props = {
     className?: string
     UrlImage: string
+    Title?: string
+    Date?: string
     Technologies: Array<string>
     ButtonInfo?: string
     ButtonGithub?: string
 }
 
 
-export function Project({className, UrlImage, Technologies}: Props) {
+export function Project({className, UrlImage, Technologies, Title, Date, ButtonGithub}: Props) {
     return <div className={clsx(className, Styles.Project)}>
             <img
                 src={UrlImage}
@@ -23,8 +25,8 @@ export function Project({className, UrlImage, Technologies}: Props) {
             />
         <div className={clsx(Styles.TitleBlock)}>
             <div className={Styles.ProjectTitreContent}>
-                <h3 >Projet 1</h3>
-                <span>2019 - 2020</span>
+                <h3 >{Title}</h3>
+                <span>{Date}</span>
             </div>
             <GroupLogoTech
                 className={Styles.GroupLogoTech}
@@ -33,7 +35,7 @@ export function Project({className, UrlImage, Technologies}: Props) {
         </div>
         <div className={clsx(Styles.ProjectButtons)}>
             <Button color={"#2181FA"} outline={true}> en savoir plus</Button>
-            <Button borderColor={"#E5E5E5"} color={"var(--tertiary-color);"}  outline={true} icon={"mdi:github"}> Github</Button>
+            <Button borderColor={"#E5E5E5"} color={"var(--tertiary-color);"} lien={ButtonGithub} outline={true} icon={"mdi:github"}> Github</Button>
         </div>
 
     </div>
