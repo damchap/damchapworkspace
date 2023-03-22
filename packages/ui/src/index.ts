@@ -19,5 +19,5 @@ export {BlockDescription} from './Molecules/BlockDescription/BlockDescription';
 
 // Organisms
 
-export {Project} from './Organisms/Project/Project';
+export {Project} from './Organisms/Project/Project' ;
 export {ProjectPromote} from './Organisms/ProjectPromote/ProjectPromote';

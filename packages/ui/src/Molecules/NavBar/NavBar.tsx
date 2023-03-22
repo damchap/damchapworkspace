@@ -1,3 +1,4 @@
+"use client";
 import Styles from './NavBar.module.scss'
 import clsx from 'clsx'
 import {NavItem} from "../../Atoms/NavItem/NavItem";

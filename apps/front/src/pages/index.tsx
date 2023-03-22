@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.scss'
 import {Button, TitreH1, TitreH3, TitreH2, TitreH4, ArticleItem, NavBar, ProjectPromote, Footer, Project} from "@damchap/ui";
 import clsx from "clsx";
 
+
 // images
 import chapart_damien from '/public/chapart_damien.png';
 
@@ -98,25 +99,20 @@ export default function Home() {
                               Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
                               Date={new Date(2023, 1, 1)}
                               Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
-                              Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "file-icons:pnpm"))}/>
+                              Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("pnpm", "file-icons:pnpm"))}/>
                   <ArticleItem className={clsx(inter.className, styles.article)}
-                                Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}}
-                                Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
-                                Date={new Date(2023, 1, 1)}
+                                Image={{src:"/iconArticle/Block-Chain.svg", alt:"test"}}
+                                Title={"Ma stack de développement pour 2023 🚀"}
+                                Date={new Date(2023, 2, 1)}
                                 Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
-                                Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "arcticons:systemappmover"))}/>
-                  <ArticleItem className={clsx(inter.className, styles.article)}
-                                Image={{src:"/iconArticle/Congratulations.svg", alt:"test"}}
-                                Title={"Allez ç’est (re)parti pour de nouvelle aventure ! 💥"}
-                                Date={new Date(2023, 1, 1)}
-                                Description={"pnpm, next.js, react, versel ou bien vue, nuxt3, netlify. Quelle de ce technologie j’utilise aujourd’hui pour développer des projects cumulent une partie front et back avec une api Rest ou"}
-                                Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "file-icons:pnpm"))}/>
+                                Technologies={new Array<techno>(new techno("React", "mdi:react"), new techno("Next.js", "teenyicons:nextjs-solid"))}/>
+
               </div>
           </section>
           <section className={styles.section}>
               <TitreH2 className={clsx(inter.className)}>🖋 Les autres project</TitreH2>
               <div className={clsx(styles.row)}>
-                  <Project className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                  <Project className={clsx(inter.className)} Title={"perf'N Zen"} Date={"2022 - 2023"} UrlImage={"/projet_PerfN-Zen.png"} Technologies={["logos:turborepo-icon", "logos:express", "logos:pnpm","logos:react", "logos:react-query-icon"]} ButtonGithub={"https://github.com/perf-n-zen"} />
                   <Project  className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
               </div>
               <div className={clsx(styles.row)}>

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ['@damchap/ui'],
+    reactStrictMode: true,
+    transpilePackages: ['@damchap/ui'],
     images: {
         dangerouslyAllowSVG: true,
         remotePatterns: [
@@ -13,8 +13,8 @@ const nextConfig = {
             },
         ],
     },
-}
-// config next/image external link ghchart.rshah.org
 
+
+}
 
 module.exports = nextConfig
