@@ -14,7 +14,7 @@ type Props = {
 }
 
 
-export function Project({className, UrlImage, Technologies, Title, Date, ButtonGithub}: Props) {
+export function Project({className, UrlImage, Technologies, Title, Date, ButtonGithub, ButtonInfo}: Props) {
     return <div className={clsx(className, Styles.Project)}>
             <img
                 src={UrlImage}
@@ -23,7 +23,7 @@ export function Project({className, UrlImage, Technologies, Title, Date, ButtonG
                 height={"100%"}
                 style={{objectFit: 'cover'}}
             />
-        <div className={clsx(Styles.TitleBlock)}>
+        <div className={clsx(Styles.TitleBlock)} style={(!ButtonInfo && !ButtonGithub ? {marginBottom: "3.375rem"} : {marginBottom: "0rem"} )}>
             <div className={Styles.ProjectTitreContent}>
                 <h3 >{Title}</h3>
                 <span>{Date}</span>
@@ -33,9 +33,10 @@ export function Project({className, UrlImage, Technologies, Title, Date, ButtonG
                 Technologies={Technologies}
             />
         </div>
-        <div className={clsx(Styles.ProjectButtons)}>
-            <Button color={"#2181FA"} outline={true}> en savoir plus</Button>
-            <Button borderColor={"#E5E5E5"} color={"var(--tertiary-color);"} lien={ButtonGithub} outline={true} icon={"mdi:github"}> Github</Button>
+        <div className={clsx(Styles.ProjectButtons)} >
+            {ButtonInfo && <Button color={"#2181FA"} lien={ButtonInfo} outline={true}> en savoir plus</Button>}
+            {ButtonGithub && <Button borderColor={"#E5E5E5"} color={"var(--tertiary-color);"} lien={ButtonGithub} outline={true}
+                     icon={"mdi:github"}> Github</Button>}
         </div>
 
     </div>

@@ -113,7 +113,7 @@ export default function Home() {
               <TitreH2 className={clsx(inter.className)}>🖋 Les autres project</TitreH2>
               <div className={clsx(styles.row)}>
                   <Project className={clsx(inter.className)} Title={"perf'N Zen"} Date={"2022 - 2023"} UrlImage={"/projet_PerfN-Zen.png"} Technologies={["logos:turborepo-icon", "logos:express", "logos:pnpm","logos:react", "logos:react-query-icon"]} ButtonGithub={"https://github.com/perf-n-zen"} />
-                  <Project  className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
+                  <Project  className={clsx(inter.className)} Title={"365 1/4 conciergerie"} Date={"2022 - 2023"} ButtonInfo={'https://www.conciergerie29.com'}  UrlImage={"/projet_conciergerie.png"} Technologies={["logos:wordpress-icon", "logos:php"]} />
               </div>
               <div className={clsx(styles.row)}>
                   <Project className={clsx(inter.className)} UrlImage={"/logo_clevguard.png"} Technologies={["logos:c-plusplus", "logos:arduino", "logos:raspberry-pi","logos:php", "vscode-icons:file-type-composer"]} />
