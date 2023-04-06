@@ -18,6 +18,7 @@ type Props = {
     navItems: Array<navItem>
 }
 
+// const type array of test
 
 
 export function NavBar({className, navItems, route}: Props) {
