@@ -39,9 +39,7 @@ export default function About() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className={styles.header}>
-                <NavBar className={inter.className} navItems={navItems} />
-            </header>
+
             <main className={styles.main}>
                 <TitreH2 className={clsx(inter.className)}>Les projects</TitreH2>
                 <section className={styles.section}>
@@ -58,7 +56,6 @@ export default function About() {
 
                 </section>
             </main>
-            <Footer className={clsx(inter.className)} />
         </>
     )
 }

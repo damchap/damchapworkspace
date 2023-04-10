@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
-import {Button, TitreH1, TitreH3, TitreH2, TitreH4, ArticleItem, NavBar, ProjectPromote, Footer, Project} from "@damchap/ui";
+import {Button, TitreH1, TitreH3, TitreH2, TitreH4, ArticleItem, ProjectPromote, Project} from "@damchap/ui";
 import clsx from "clsx";
 
 
@@ -43,9 +43,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
-        <NavBar className={inter.className} navItems={navItems} />
-      </header>
       <main className={styles.main}>
           <span className={clsx(inter.className, styles.HelloWorld)}>Hello! 👋 Moi c’est</span>
           <TitreH1 className={clsx(styles.titreH1, inter.className)}>
@@ -126,7 +123,6 @@ export default function Home() {
               </div>
           </section>
       </main>
-        <Footer className={clsx(inter.className)} />
     </>
   )
 }
