@@ -72,6 +72,7 @@ import "./types/Post"
 import "./types/Comment"
 import "./types/Technology"
 
+
 import { builder } from "./builder";
 
 export const schema = builder.toSchema()
