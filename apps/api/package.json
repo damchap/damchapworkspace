@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^4.12.0",
+    "@apollo/server": "^4.7.0",
+    "@as-integrations/next": "^1.3.0",
+    "@pothos/core": "^3.29.0",
+    "@pothos/plugin-add-graphql": "^3.1.0",
+    "@pothos/plugin-prisma": "^3.47.2",
+    "@prisma/client": "^4.13.0",
     "@types/node": "18.14.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "apollo-server": "^3.12.0",
     "eslint": "8.34.0",
     "eslint-config-next": "13.3.0",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.9.1",
     "next": "13.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,6 +30,10 @@
     "vercel": "^28.18.4"
   },
   "devDependencies": {
-    "prisma": "^4.12.0"
+    "prisma": "^4.13.0",
+    "ts-node": "^10.9.1"
+  },
+  "prisma": {
+    "seed": "ts-node --transpile-only ./prisma/seed.ts"
   }
 }

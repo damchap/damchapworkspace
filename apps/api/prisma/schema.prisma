@@ -5,40 +5,68 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator pothos {
+  provider = "prisma-pothos-types"
+}
+
 datasource db {
-  provider = "mongodb"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Post {
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  slug     String    @unique
-  title    String
-  body     String
-  author   User      @relation(fields: [authorId], references: [id])
-  authorId String    @db.ObjectId
-  comments Comment[]
+  id           String        @id @default(uuid())
+  slug         String        @unique
+  title        String
+  description  String
+  body         String
+  createdAt    DateTime      @default(now())
+  nbLikes      Int
+  nbViews      Int
+  icon         String
+  author       User          @relation(fields: [authorId], references: [id])
+  authorId     String
+  technologies Technologie[]
+  comments     Comment[]
+}
+
+model Technologie {
+  id    String @id @default(uuid())
+  name  String @unique
+  icon  String
+  // many-to-many entre Post et Technologie
+  posts Post[]
+}
+
+model Project {
+  id    String @id @default(uuid())
+  slug  String @unique
+  title String
+  body  String
 }
 
 model User {
-  id      String   @id @default(auto()) @map("_id") @db.ObjectId
-  email   String   @unique
-  name    String?
-  address Address?
-  posts   Post[]
+  id            String @id @default(uuid())
+  email         String @unique
+  name          String
+  address       Adress @relation(fields: [addressStreet], references: [street])
+  posts         Post[]
+  addressStreet String
 }
 
 model Comment {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  id      String @id @default(uuid())
   comment String
   post    Post   @relation(fields: [postId], references: [id])
-  postId  String @db.ObjectId
+  postId  String
 }
 
 // Address is an embedded document
-type Address {
-  street String
-  city   String
-  state  String
-  zip    String
+model Adress {
+  idAdress String @id @default(uuid())
+  street   String @unique
+  city     String
+  state    String
+  zip      String
+  User     User[]
 }
